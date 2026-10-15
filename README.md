@@ -1,4 +1,4 @@
-> **Maintained fork by [TODO for AI](https://todofor.ai).** Lineage: `@steipete/bird` 0.8.0 → zaydiscold/bird 0.9.0 → 0xEnc0der/bird-x-cli v3.0.0 → this. Install: `git clone https://github.com/Sixzero/bird && cd bird && pnpm i && pnpm run build:dist && npm link`. Adds `bird delete`. See CHANGELOG.
+> **Maintained fork.** Lineage: `@steipete/bird` 0.8.0 → zaydiscold/bird 0.9.0 → 0xEnc0der/bird-x-cli v3.0.0 → this. Install: `git clone https://github.com/Sixzero/bird && cd bird && pnpm i && pnpm run build:dist && npm link`. Adds `bird delete`. See CHANGELOG.
 
 # Bird CLI v3.0.0 — Free X/Twitter CLI
 
