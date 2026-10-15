@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import { registerBookmarksCommand } from '../commands/bookmarks.js';
 import { registerCheckCommand } from '../commands/check.js';
+import { registerDeleteCommand } from '../commands/delete.js';
 import { registerFollowCommands } from '../commands/follow.js';
 import { registerHelpCommand } from '../commands/help.js';
 import { registerHomeCommand } from '../commands/home.js';
@@ -27,6 +28,7 @@ export const KNOWN_COMMANDS = new Set([
   'mentions',
   'bookmarks',
   'unbookmark',
+  'delete',
   'follow',
   'unfollow',
   'following',
@@ -145,6 +147,7 @@ export function createProgram(ctx: CliContext): Command {
   registerSearchCommands(program, ctx);
   registerBookmarksCommand(program, ctx);
   registerUnbookmarkCommand(program, ctx);
+  registerDeleteCommand(program, ctx);
   registerFollowCommands(program, ctx);
   registerListsCommand(program, ctx);
   registerHomeCommand(program, ctx);

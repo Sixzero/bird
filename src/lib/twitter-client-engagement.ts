@@ -13,6 +13,8 @@ export interface TwitterClientEngagementMethods {
   unretweet(tweetId: string): Promise<BookmarkMutationResult>;
   /** Bookmark a tweet. */
   bookmark(tweetId: string): Promise<BookmarkMutationResult>;
+  /** Delete one of your own tweets. */
+  deleteTweet(tweetId: string): Promise<BookmarkMutationResult>;
 }
 
 export function withEngagement<TBase extends AbstractConstructor<TwitterClientBase>>(
@@ -111,6 +113,11 @@ export function withEngagement<TBase extends AbstractConstructor<TwitterClientBa
     /** Bookmark a tweet. */
     async bookmark(tweetId: string): Promise<BookmarkMutationResult> {
       return this.performEngagementMutation('CreateBookmark', tweetId);
+    }
+
+    /** Delete one of your own tweets. */
+    async deleteTweet(tweetId: string): Promise<BookmarkMutationResult> {
+      return this.performEngagementMutation('DeleteTweet', tweetId);
     }
   }
 
