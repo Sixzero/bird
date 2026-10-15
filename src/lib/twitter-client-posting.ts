@@ -164,7 +164,7 @@ export function withPosting<TBase extends AbstractConstructor<TwitterClientBase>
               return { success: true, tweetId };
             }
 
-            return { success: false, error: 'Tweet created but no ID returned' };
+            return { success: false, error: 'X returned no tweet (silently rejected: check x-client-transaction-id / duplicate text / account limits)' };
           }
         }
 
@@ -200,7 +200,7 @@ export function withPosting<TBase extends AbstractConstructor<TwitterClientBase>
 
         return {
           success: false,
-          error: 'Tweet created but no ID returned',
+          error: 'X returned no tweet (silently rejected: check x-client-transaction-id / duplicate text / account limits)',
         };
       } catch (error) {
         return {
@@ -299,7 +299,7 @@ export function withPosting<TBase extends AbstractConstructor<TwitterClientBase>
         if (tweetId) {
           return { success: true, tweetId };
         }
-        return { success: false, error: 'Tweet created but no ID returned' };
+        return { success: false, error: 'X returned no tweet (silently rejected: check x-client-transaction-id / duplicate text / account limits)' };
       } catch (error) {
         return { success: false, error: error instanceof Error ? error.message : String(error) };
       }
