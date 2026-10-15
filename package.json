@@ -1,5 +1,5 @@
 {
-  "name": "@todoforai/bird",
+  "name": "bird",
   "version": "0.10.0",
   "description": "Fast X CLI (tweet, reply, read, delete) via browser cookies. Maintained fork of @steipete/bird with real x-client-transaction-id.",
   "type": "module",
@@ -56,7 +56,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/todoforai/bird.git"
+    "url": "git+https://github.com/Sixzero/bird.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "private": true
 }

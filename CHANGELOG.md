@@ -1,7 +1,7 @@
 # Changelog
 
-## v0.10.0 (todoforai/bird — 2026-10-15)
-- Published as `@todoforai/bird` (maintained fork; upstream `@steipete/bird` is deprecated and its repo is gone).
+## v0.10.0 (Sixzero/bird — 2026-10-15)
+- Maintained fork (upstream `@steipete/bird` is deprecated and its repo is gone). Not published to npm.
 - **New `bird delete <id-or-url...>`** — delete your own tweets (`DeleteTweet` GraphQL op).
 - Clearer error when X silently drops a post (`{"create_tweet":{"tweet_results":{}}}`) instead of the misleading "Tweet created but no ID returned".
 - `x-client-transaction-id` bumped to ^0.3.2.
