@@ -21,8 +21,8 @@ importers:
         specifier: ^4.1.5
         version: 4.1.5
       x-client-transaction-id:
-        specifier: ^0.3.1
-        version: 0.3.1
+        specifier: ^0.3.2
+        version: 0.3.2
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.3.10
@@ -1079,8 +1079,8 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  x-client-transaction-id@0.3.1:
-    resolution: {integrity: sha512-fD9YtDswTL3VyG/z7FbZUfMu5CUsvGmKk33fM3b9eOXe0Wnmj8W55UKLPA5Z/cuq6WrWTxXQhLcV3GGCD6mKaQ==}
+  x-client-transaction-id@0.3.2:
+    resolution: {integrity: sha512-DpX8C4wF8S54cSE9X1MJkJbNElhSg5337iW0UMFDJVAVCj+cHePCvS6tj2EQw85UGVf1ywBSTGVckncBONUdDg==}
 
 snapshots:
 
@@ -1857,7 +1857,7 @@ snapshots:
       siginfo: 2.0.0
       stackback: 0.0.2
 
-  x-client-transaction-id@0.3.1:
+  x-client-transaction-id@0.3.2:
     dependencies:
       linkedom: 0.18.13
     transitivePeerDependencies:

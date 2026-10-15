@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.10.0 (todoforai/bird — 2026-10-15)
+- Published as `@todoforai/bird` (maintained fork; upstream `@steipete/bird` is deprecated and its repo is gone).
+- **New `bird delete <id-or-url...>`** — delete your own tweets (`DeleteTweet` GraphQL op).
+- Clearer error when X silently drops a post (`{"create_tweet":{"tweet_results":{}}}`) instead of the misleading "Tweet created but no ID returned".
+- `x-client-transaction-id` bumped to ^0.3.2.
+- Build: drop missing `copy-dist-assets.js` step and stale `pnpm.patchedDependencies`.
+- Verified live 2026-10-15: whoami, tweet, video upload, delete.
+
+
 ## v3.0.0 (2026-06-12)
 
 ### Fixed

@@ -1,3 +1,5 @@
+> **Maintained fork by [TODO for AI](https://todofor.ai).** Lineage: `@steipete/bird` 0.8.0 → zaydiscold/bird 0.9.0 → 0xEnc0der/bird-x-cli v3.0.0 → this. Install: `npm i -g @todoforai/bird`. Adds `bird delete`. See CHANGELOG.
+
 # Bird CLI v3.0.0 — Free X/Twitter CLI
 
 A fast, free X/Twitter CLI that uses browser cookies (GraphQL) instead of the paid X API. Post tweets, reply, read threads, search — no API key needed.
